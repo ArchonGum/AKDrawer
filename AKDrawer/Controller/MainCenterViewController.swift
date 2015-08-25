@@ -39,14 +39,34 @@ class MainCenterViewController: UITableViewController {
     
     @IBAction func barButtonClick(sender: UIBarButtonItem) {
         switch sender.tag {
+            
+        // Left bar button action
         case 101:
             let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
             appDelegate.toggleLeftDrawer(sender, animated: false)
+            
+        // Right bar button action
         case 102:
             let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
             appDelegate.toggleRightDrawer(sender, animated: true)
         default:
             break
+        }
+    }
+    
+    @IBAction func swipeGestureAction(sender: UISwipeGestureRecognizer) {
+        switch sender.direction {
+            
+        case UISwipeGestureRecognizerDirection.Left:
+            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            appDelegate.toggleRightDrawer(sender, animated: false)
+            
+        case UISwipeGestureRecognizerDirection.Right:
+            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            appDelegate.toggleLeftDrawer(sender, animated: true)
+            
+        default:
+            return
         }
     }
 }

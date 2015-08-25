@@ -90,7 +90,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W3I-rA-fbc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18" y="659"/>
+            <point key="canvasLocation" x="136" y="659"/>
         </scene>
         <!--Main Center View-->
         <scene sceneID="LdF-Ua-FHe">
@@ -112,6 +112,8 @@
                         <connections>
                             <outlet property="dataSource" destination="QSi-ae-O5A" id="wVy-nf-cT4"/>
                             <outlet property="delegate" destination="QSi-ae-O5A" id="8h6-Jn-Lf4"/>
+                            <outletCollection property="gestureRecognizers" destination="Tkx-d3-VrC" appends="YES" id="ICE-qi-3au"/>
+                            <outletCollection property="gestureRecognizers" destination="w4s-bm-oB2" appends="YES" id="X9n-QL-8FZ"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Main Center View" id="ipe-Uf-rDU">
@@ -130,6 +132,16 @@
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9NL-Zk-8nw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="Tkx-d3-VrC" userLabel="Swipe Left Gesture Recognizer">
+                    <connections>
+                        <action selector="swipeGestureAction:" destination="QSi-ae-O5A" id="SoY-kn-fn1"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="w4s-bm-oB2" userLabel="Swipe Right Gesture Recognizer">
+                    <connections>
+                        <action selector="swipeGestureAction:" destination="QSi-ae-O5A" id="JHs-2d-avf"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="865" y="659"/>
         </scene>
