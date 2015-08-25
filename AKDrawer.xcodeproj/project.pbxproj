@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D173854E1B8C4F8600A0520B /* AKDrawer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D173854D1B8C4F8600A0520B /* AKDrawer.storyboard */; };
 		D178A9681B8A118C00B88149 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D178A9671B8A118C00B88149 /* AppDelegate.swift */; };
-		D178A96D1B8A118C00B88149 /* AKDrawer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D178A96B1B8A118C00B88149 /* AKDrawer.storyboard */; };
 		D178A96F1B8A118C00B88149 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D178A96E1B8A118C00B88149 /* Images.xcassets */; };
 		D178A97E1B8A118C00B88149 /* AKDrawerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D178A97D1B8A118C00B88149 /* AKDrawerTests.swift */; };
 		D178A9911B8A169A00B88149 /* KGDrawerAnimating.swift in Sources */ = {isa = PBXBuildFile; fileRef = D178A98C1B8A169A00B88149 /* KGDrawerAnimating.swift */; };
@@ -31,10 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D173854D1B8C4F8600A0520B /* AKDrawer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AKDrawer.storyboard; sourceTree = "<group>"; };
 		D178A9621B8A118C00B88149 /* AKDrawer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AKDrawer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D178A9661B8A118C00B88149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D178A9671B8A118C00B88149 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D178A96C1B8A118C00B88149 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AKDrawer.storyboard; sourceTree = "<group>"; };
 		D178A96E1B8A118C00B88149 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Source/Images.xcassets; sourceTree = "<group>"; };
 		D178A9771B8A118C00B88149 /* AKDrawerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AKDrawerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D178A97C1B8A118C00B88149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -136,9 +136,9 @@
 		D178A9881B8A11EB00B88149 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D178A96B1B8A118C00B88149 /* AKDrawer.storyboard */,
+				D173854D1B8C4F8600A0520B /* AKDrawer.storyboard */,
 			);
-			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		D178A9891B8A120D00B88149 /* Source */ = {
@@ -250,8 +250,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D178A96D1B8A118C00B88149 /* AKDrawer.storyboard in Resources */,
 				D178A96F1B8A118C00B88149 /* Images.xcassets in Resources */,
+				D173854E1B8C4F8600A0520B /* AKDrawer.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,17 +297,6 @@
 			targetProxy = D178A9781B8A118C00B88149 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		D178A96B1B8A118C00B88149 /* AKDrawer.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D178A96C1B8A118C00B88149 /* Base */,
-			);
-			name = AKDrawer.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D178A97F1B8A118C00B88149 /* Debug */ = {
@@ -466,6 +455,7 @@
 				D178A9831B8A118C00B88149 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D178A9841B8A118C00B88149 /* Build configuration list for PBXNativeTarget "AKDrawerTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +464,7 @@
 				D178A9861B8A118C00B88149 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
